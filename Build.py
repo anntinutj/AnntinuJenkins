@@ -1,1 +1,1 @@
-print "Build CICD Pipeline, Moving to deploying"
+print "New Build CICD Pipeline, Moving to deploying"
