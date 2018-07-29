@@ -7,17 +7,8 @@ pipeline {
       }
     }
     stage('Compile') {
-      parallel {
-        stage('Compile') {
-          steps {
-            sh 'python Compile.py'
-          }
-        }
-        stage('') {
-          steps {
-            mail(subject: 'Test Completed', body: 'Test for job AnntinuJenkins completed', from: 'anntinutj@gmail.com', to: 'anntinumets@gmail.com')
-          }
-        }
+      steps {
+        sh 'python Compile.py'
       }
     }
     stage('Build') {
